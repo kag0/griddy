@@ -1,0 +1,166 @@
+.grid {
+	display: grid;
+	
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	grid-gap: .5rem 2%;
+}
+
+.fit-columns {
+	grid-template-columns: repeat(auto-fit, minmax(6.5%, 1fr));
+}
+
+.fit-rows {
+	grid-template-rows: repeat(auto-fit, minmax(6.5%, 1fr));
+}
+
+.justify-self-start {
+	justify-self: start;
+}
+.justify-self-end {
+	justify-self: end;
+}
+.justify-self-center {
+	justify-self: center;
+}
+
+.align-self-start {
+	align-self: start;
+}
+.align-self-end {
+	align-self: end;
+}
+.align-self-center {
+	align-self: center;
+}
+
+.x-2 {
+	grid-column-start: span 2;
+}
+.x-3 {
+	grid-column-start: span 3;
+}
+.x-4 {
+	grid-column-start: span 4;
+}
+.x-5 {
+	grid-column-start: span 5;
+}
+.x-6 {
+	grid-column-start: span 6;
+}
+.x-7 {
+	grid-column-start: span 7;
+}
+.x-8 {
+	grid-column-start: span 8;
+}
+.x-9 {
+	grid-column-start: span 9;
+}
+.x-10 {
+	grid-column-start: span 10;
+}
+.x-11 {
+	grid-column-start: span 11;
+}
+.x-12 {
+	grid-column-start: span 12;
+}
+
+.y-2 {
+	grid-row-start: span 2;
+}
+.y-3 {
+	grid-row-start: span 3;
+}
+.y-4 {
+	grid-row-start: span 4;
+}
+.y-5 {
+	grid-row-start: span 5;
+}
+.y-6 {
+	grid-row-start: span 6;
+}
+.y-7 {
+	grid-row-start: span 7;
+}
+.y-8 {
+	grid-row-start: span 8;
+}
+.y-9 {
+	grid-row-start: span 9;
+}
+.y-10 {
+	grid-row-start: span 10;
+}
+.y-11 {
+	grid-row-start: span 11;
+}
+.y-12 {
+	grid-row-start: span 12;
+}
+
+@media(max-width: 60em) {
+
+	.grid, .fit-columns {
+		grid-template-columns: 1fr;
+	}
+
+	.spacer {
+		display: none;
+	}
+
+	.x-2, .x-3, .x-4, .x-5, .x-6, .x-7, .x-8, .x-9, .x-10, .x-11, .x-12 {
+		grid-column-start: span 1;
+	}
+
+	.y-collapse {
+		grid-row-start: span 1;
+	}
+
+	.y-collapse-2 {
+		grid-row-start: span 2;
+	}
+
+	.y-collapse-3 {
+		grid-row-start: span 3;
+	}
+
+	.y-collapse-4 {
+		grid-row-start: span 4;
+	}
+
+	.y-collapse-5 {
+		grid-row-start: span 5;
+	}
+
+	.y-collapse-6 {
+		grid-row-start: span 6;
+	}
+
+	.y-collapse-7 {
+		grid-row-start: span 7;
+	}
+
+	.y-collapse-8 {
+		grid-row-start: span 8;
+	}
+
+	.y-collapse-9 {
+		grid-row-start: span 9;
+	}
+
+	.y-collapse-10 {
+		grid-row-start: span 10;
+	}
+
+	.y-collapse-11 {
+		grid-row-start: span 11;
+	}
+
+	.y-collapse-12 {
+		grid-row-start: span 12;
+	}
+}

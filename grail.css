@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: blue;
+}
+.nav {
+    background-color: red;
+}
+.main {
+    background-color: yellow;
+}
+.side {
+    background-color: green;
+}
+.foot {
+    background-color: blue;
+}
